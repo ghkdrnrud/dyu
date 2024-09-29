@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방문자 등록 - 사용자 페이지</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 일반 사용자 화면: 입장 및 퇴장 -->
+    <div class="container" id="userSection">
+        <h2>방문자 입장 및 퇴장</h2>
+        <!-- 입장 및 퇴장 버튼을 왼쪽과 오른쪽에 배치 -->
+        <div class="button-container">
+            <button id="showEntryForm" class="left-button">입장</button>
+            <button id="showExitForm" class="right-button">퇴장</button>
+        </div>
+
+        <!-- 입장 입력 폼 -->
+        <div id="entryForm" class="form-container hidden">
+            <form id="entryDataForm" class="form-content">
+                <div class="input-group">
+                    <label for="entryName">이름:</label>
+                    <input type="text" id="entryName" required>
+                </div>
+                <div class="input-group">
+                    <label for="entryStudentId">학번:</label>
+                    <input type="text" id="entryStudentId" required>
+                </div>
+                <button type="submit">입장 완료</button>
+            </form>
+        </div>
+
+        <!-- 퇴장 입력 폼 -->
+        <div id="exitForm" class="form-container hidden">
+            <form id="exitDataForm" class="form-content">
+                <div class="input-group">
+                    <label for="exitName">이름:</label>
+                    <input type="text" id="exitName" required>
+                </div>
+                <div class="input-group">
+                    <label for="exitStudentId">학번:</label>
+                    <input type="text" id="exitStudentId" required>
+                </div>
+                <button type="button" id="checkExit">퇴장 확인</button>
+                <button type="button" id="exitButton" class="hidden">퇴장 완료</button>
+            </form>
+        </div>
+
+        <p id="message" class="hidden"></p>
+
+        <!-- 관리자 페이지 링크 -->
+        <p class="admin-link">
+            관리자이십니까? <a href="admin.html">관리자 페이지로 이동</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

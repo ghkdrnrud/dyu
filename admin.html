@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방문자 관리 - 관리자 페이지</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 관리자 화면 -->
+    <div class="container" id="adminSection">
+        <h2>방문자 목록 관리</h2>
+        <table id="visitorTable">
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>학번</th>
+                    <th>입장 시간</th>
+                    <th>퇴장 시간</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- 방문자 목록 초기화 버튼 -->
+        <button id="resetButton" class="reset-button">방문자 목록 초기화</button>
+        
+        <!-- 사용자 페이지로 돌아가기 링크 -->
+        <p class="admin-link">
+            일반 사용자 페이지로 돌아가기? <a href="index.html">사용자 페이지로 이동</a>
+        </p>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

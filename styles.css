@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    width: 100px;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"] {
+    width: 250px;
+    padding: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.hidden {
+    display: none;
+}
+
+.admin-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left-button {
+    width: 48%;
+}
+
+.right-button {
+    width: 48%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: #c9302c;
+}
+
+#loginMessage, #message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
